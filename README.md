@@ -56,18 +56,6 @@ day of week   1 2 3 4 5
 command       /usr/bin/find
 ```
 
-## Cron Expression Format
-
-┌───────────── minute (0 - 59)
-│ ┌───────────── hour (0 - 23)
-│ │ ┌───────────── day of month (1 - 31)
-│ │ │ ┌───────────── month (1 - 12)
-│ │ │ │ ┌───────────── day of week (0 - 6) (Sunday to Saturday)
-│ │ │ │ │
-│ │ │ │ │
-* * * * * command
-
-
 ## Running Tests
 
 ```bash
