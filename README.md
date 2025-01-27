@@ -18,7 +18,7 @@ A robust cron expression parser that breaks down cron strings into their time co
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/cron-parser.git
+git clone https://github.com/ramapypi/cron-parser.git
 cd cron-parser
 ```
 
@@ -57,7 +57,6 @@ command       /usr/bin/find
 ```
 
 ## Cron Expression Format
-The cron expression format consists of 5 fields separated by spaces:
 
 ┌───────────── minute (0 - 59)
 │ ┌───────────── hour (0 - 23)
@@ -68,31 +67,9 @@ The cron expression format consists of 5 fields separated by spaces:
 │ │ │ │ │
 * * * * * command
 
-## Supported Patterns
-
-- Lists (1,2,3)
-- Ranges (1-5)
-- Steps (*/15)
-- Range with steps (1-15/3)
-- * (any value)
 
 ## Running Tests
 
 ```bash
 pytest tests/test_cron_parser.py -v
 ```
-
-
-## Project Structure
-
-cron-parser/
-├── src/
-│   ├── __init__.py
-│   ├── cron.py
-│   ├── fields.py
-│   ├── interfaces.py
-│   └── parser.py
-├── tests/
-│   └── test_cron_parser.py
-├── main.py
-└── README.md
